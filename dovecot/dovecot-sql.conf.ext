@@ -1,0 +1,4 @@
+driver = mysql
+connect = "host=127.0.0.1 dbname=POSTFIX_ACCOUNTS user=mail password=mail1234!"
+default_pass_scheme = SHA256-CRYPT
+password_query = SELECT email as user, password FROM ACCOUNTS_TABLE WHERE email='%u';

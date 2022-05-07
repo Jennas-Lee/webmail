@@ -1,0 +1,5 @@
+user=mail
+password=mail1234!
+hosts=127.0.0.1
+dbname=POSTFIX_ACCOUNTS
+query=SELECT 1 FROM ALIAS_TABLE WHERE SOURCE='%s'
